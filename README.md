@@ -6,9 +6,9 @@ accordions, tooltips and modals.
 Feel free to fork this project, modify the existing components or add a new one.
 
 ##### What you will find:
-- [Accordions] (accordion/)
-- [Modal] (modal/)
-- [Tooltips] (tooltips/)
+- [Accordions] 
+- [Modal] 
+- [Tooltips] 
 
 Inside each link you will find a readme explaining each component
 
@@ -21,7 +21,7 @@ Inside each link you will find a readme explaining each component
 
 1. Get the project:
     ```
-        $ git clone https://gitlab.fftech.info/Labs/css-only.git
+        $ git clone https://github.com/nuno-andrade/cssonly.git
     ```
 
 2. Open terminal in the directory of the project and run
