@@ -1,0 +1,53 @@
+.accordion__child {
+  padding-bottom:10px;
+  &:last-child {
+    padding-bottom:0;
+  }
+}
+
+.accordion__child--content {
+  max-height: 0;
+  padding:0;
+  width:100%;
+  overflow: hidden;
+  opacity:0;
+  transition: max-height .15s ease-out,  padding .3s ease-out, opacity .3s ease-out;
+}
+
+.accordion__child--input:checked ~ .accordion__child--content {
+  max-height: 10000px;
+  padding-top: 10px;
+  opacity:1;
+  transition: max-height 1s ease-in,  padding .3s ease-in, opacity .3s ease-in;
+  overflow:visible;
+}
+
+//Accordion Styling
+.accordion__child--label{
+    cursor:pointer;
+    display: flex;
+}
+
+.accordion__child--title {
+    float:left;
+    flex-grow:1;
+}
+
+.accordion__child--icon{
+    font-size: 1.5em;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.accordion__child--icon:before{
+    content: "+";
+}
+
+// active styling
+.accordion__child--input:checked[type="radio"] ~ .accordion__child--label {
+   cursor:default;
+}
+.accordion__child--input:checked ~ .accordion__child--label .accordion__child--icon:before {
+    content: "-";
+}
